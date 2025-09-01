@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Librarian</title>
+  <!-- Link către CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>📚 Smart Librarian</h1>
+    <div id="status" class="status">Verific backend…</div>
+
+    <div class="card window" id="chat"></div>
+
+    <div class="bar">
+  <input id="inp" placeholder="Ex: Vreau o carte despre libertate și control social" />
+  <label class="toggle">
+    <input type="checkbox" id="genImage" checked />
+    <span>Generează imagine</span>
+  </label>
+  <button id="send">Trimite</button>
+</div>
+
+
+    <div id="err" class="err"></div>
+    <p class="muted">Sugestie: întreabă „Ce-mi recomanzi dacă iubesc poveștile?”</p>
+  </div>
+
+  <!-- Script separat -->
+  <script src="script.js"></script>
+</body>
+</html>
